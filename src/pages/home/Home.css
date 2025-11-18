@@ -1,0 +1,404 @@
+@import url("../../Main.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container1 {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-color: var(--background-cinza);
+}
+
+#container1 #header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 8rem;
+}
+
+#container1 #header #logo h1 {
+  font-size: 1.5rem;
+
+  color: var(--roxo-primario);
+}
+
+#container1 #header #links {
+  display: flex;
+  gap: 3.75rem;
+}
+
+#container1 #header #links .link {
+  font-size: 1rem;
+  text-decoration: none;
+
+  color: var(--texto-escuro);
+
+  transition: all 0.2s ease-in-out;
+}
+
+#container1 #header #links .link:hover {
+  color: var(--roxo-primario);
+
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+#container1 #header #botaoContainer {
+  height: 3.5rem;
+  width: 8rem;
+  border-radius: 30px;
+
+  background-color: var(--roxo-primario);
+
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container1 #header #botaoContainer:hover {
+  background-color: var(--roxo-secundario);
+  cursor: pointer;
+}
+
+#container1 #header #botaoContainer #login {
+  text-decoration: none;
+  color: var(--texto-branco);
+
+  font-size: 1rem;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container1 #containerTextoHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex-grow: 1;
+}
+
+#container1 #containerTextoHome h2 {
+  font-size: 4rem;
+  text-align: center;
+
+  width: 40rem;
+
+  margin-bottom: 1rem;
+
+  color: var(--texto-escuro);
+}
+
+#container1 #containerTextoHome h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  margin-bottom: 3rem;
+
+  color: var(--texto-preto);
+}
+
+#container1 #containerTextoHome #botaoContainer {
+  background-color: var(--roxo-primario);
+  border: none;
+  color: var(--texto-branco);
+
+  height: 3.5rem;
+  width: 13.5rem;
+  border-radius: 30px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container1 #containerTextoHome #botaoContainer:hover {
+  background-color: var(--roxo-secundario);
+
+  cursor: pointer;
+}
+
+#container1 #containerTextoHome #botaoContainer #comecarAgora {
+  color: var(--texto-branco);
+  text-decoration: none;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container2 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../../assets/background-recursos-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  box-shadow: inset 0px 20px 17.3px 14px rgba(0, 0, 0, 0.22);
+}
+
+#container2 #tituloRecursos {
+  margin-bottom: 4.62rem;
+
+  font-size: 3rem;
+  color: var(--texto-branco);
+}
+
+#container2 #containersRecursos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  
+}
+
+
+#container2 #containersRecursos .containerRecurso {
+  background-color: var(--background-claro);
+
+  height: 16rem;
+  width: 24.75rem;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 20px 17.3px 14px rgba(0, 0, 0, 0.22);
+
+  transition: all 0.2s ease-in-out;
+}
+
+#container2 #containersRecursos .containerRecurso:hover {
+  height: 16.5rem;
+  width: 25.25rem;
+}
+
+#container2 #containersRecursos .containerRecurso h1 {
+  font-size: 2.5rem;
+
+  margin-bottom: 1.5rem;
+}
+
+#container2 #containersRecursos .containerRecurso h2 {
+  font-size: 1.5rem;
+  color: var(--texto-preto);
+
+  margin-bottom: 0.625rem;
+}
+
+#container2 #containersRecursos .containerRecurso span {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 16rem;
+  color: var(--texto-transparente);
+
+  display: flex;
+  text-align: center;
+}
+
+#container3 {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  background-color: var(--background-cinza);
+}
+
+#container3 #containerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 56rem;
+  width: 100%;
+
+  flex-grow: 1;
+}
+
+#container3 #containerMain h1 {
+  font-size: 3rem;
+  color: var(--texto-escuro);
+
+  margin-bottom: 8.87rem;
+}
+
+#container3 #containerMain #containerTextos {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#container3 #containerMain #containerTextos .containerTexto {
+  width: 23.43rem;
+}
+
+#container3 #containerMain #containerTextos .containerTexto h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+
+  color: var(--texto-escuro);
+}
+
+#container3 #containerMain #containerTextos .containerTexto span {
+  font-size: 1.25rem;
+  font-weight: 100;
+
+  color: var(--texto-transparente);
+}
+
+#container3 #footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  padding: 2rem;
+  width: 100%;
+
+  box-shadow: 0px -1px 0px 1px var(--texto-transparente);
+}
+
+#container3 #footer span {
+  color: var(--texto-transparente);
+  font-size: 1rem;
+  font-weight: 400;
+  height: 1.3rem;
+}
+
+@media(max-width:600px){
+  div #container1 #header {
+    padding: 2rem;
+  }
+
+  div #container1 #header #links {
+    display: none;
+  }
+  
+  div #container1 #containerTextoHome h1 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  div #container1 #containerTextoHome h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  div #container2 #tituloRecursos {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  div #container2 #containersRecursos {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+  }
+
+  div #container2 #containersRecursos .containerRecurso {
+    height: 15rem;
+    width: 22rem;
+  }
+
+  div #container2 #containersRecursos .containerRecurso h1 {
+    font-size: 2rem;
+  }
+
+  div #container3 #containerMain h1 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  div #container3 #containerMain #containerTextos .containerTexto {
+    width: 20rem;
+  }
+
+  div #container3 #containerMain #containerTextos .containerTexto h2 {
+    font-size: 1.5rem;
+  }
+
+  div #container3 #containerMain #containerTextos .containerTexto span {
+    font-size: 1rem;
+  }
+
+  div #container3 #containerMain #containerTextos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  div #container3 #footer {
+    height: 6.5rem;
+
+    box-shadow: 0px -0.5px 0px 0.5px var(--texto-transparente);
+  }
+
+  div #container3 #footer span {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width:768px){
+  div #container1 #header {
+    padding: 2rem;
+  }
+
+  div #container2 #containersRecursos {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+  }
+
+  div #container3 #containerMain h1 {
+    margin-bottom: 5rem;
+  }
+
+  div #container3 #containerMain #containerTextos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+  }
+}

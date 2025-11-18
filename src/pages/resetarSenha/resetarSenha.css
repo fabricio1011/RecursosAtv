@@ -1,0 +1,278 @@
+@import url("../../Main.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: hidden;
+}
+
+#main {
+    height: 100dvh;
+    width: 100dvw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background-cinza);
+}
+
+#redefinirContainer {
+    background-color: var(--background-claro);
+
+    height: 33.75rem;
+    width: 32.6875rem;
+    border-radius: 15px;
+    padding: 2rem 2.25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.12);
+}
+
+#redefinirContainer #botaoVoltar {
+    height: 3rem;
+    width: 3rem;
+    margin: 0.625rem;
+
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#redefinirContainer #botaoVoltar #imagemBotaoVoltar {
+    height: 100%;
+    width: 100%;
+}
+
+#redefinirContainer #redefinirConteudo {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#redefinirContainer #redefinirConteudo #redefinirDescricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#redefinirContainer #redefinirConteudo #redefinirDescricao h2 {
+    font-size: 2.25rem;
+    color: var(--texto-preto);
+
+    margin-bottom: 0.6875rem;
+}
+
+#redefinirContainer #redefinirConteudo #redefinirDescricao p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--texto-transparente);
+}
+
+#redefinirContainer #redefinirConteudo form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+}
+
+#redefinirContainer #redefinirConteudo form .grupoInput {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+#redefinirContainer #redefinirConteudo form .grupoInput label {
+    color: var(--texto-preto);
+    
+    font-size: 1rem;
+
+    margin-bottom: 0.625rem;
+}
+
+#redefinirContainer #redefinirConteudo form .grupoInput input {
+    height: 4.1875rem;
+
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid var(--borda-input);
+
+    background-color: var(--background-input);
+
+    font-size: 1rem;
+    color: var(--texto-preto);
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+#redefinirContainer #redefinirConteudo form .grupoInput input::placeholder {
+    color: var(--texto-input);
+}
+
+#redefinirContainer #redefinirConteudo form .grupoInput input:focus {
+    border: 2px solid var(--roxo-primario);
+}
+
+#redefinirContainer #redefinirConteudo form #opcoesForm {
+    margin-top: 1rem;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#redefinirContainer #redefinirConteudo form #opcoesForm #remember {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+}
+
+#redefinirContainer #redefinirConteudo form #opcoesForm #remember input {
+    accent-color: var(--roxo-primario);
+
+    height: 1rem;
+    width: 1rem;
+}
+
+#redefinirContainer #redefinirConteudo form #opcoesForm #remember label {
+    font-size: 0.75rem;
+    color: var(--texto-preto);
+}
+
+#redefinirContainer #redefinirConteudo form #opcoesForm a {
+    font-size: 0.75rem;
+    color: var(--texto-preto);
+}
+
+#redefinirContainer #redefinirConteudo form #redefinirSubmitButtonContainer {
+    width: 100%;
+}
+
+#redefinirContainer #redefinirConteudo form button {
+    width: 100%;
+    height: 4.1875rem;
+
+    border-radius: 35px;
+    border: none;
+    background-color: var(--roxo-primario);
+
+    color: var(--texto-branco);
+    font-size: 1rem;
+
+    margin-top: 2rem;
+
+    transition: all 0.2s ease-in-out;
+}
+
+#redefinirContainer #redefinirConteudo form button:hover {
+    cursor: pointer;
+    background-color: var(--roxo-secundario);
+}
+
+#redefinirContainer #redefinirConteudo form #containerErro {
+    height: 1.2rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#redefinirContainer #redefinirConteudo form #containerErro .hiddenError {
+    opacity: 0;
+}
+
+#redefinirContainer #redefinirConteudo form #containerErro .visibleError {
+    opacity: 1;
+    color: var(--texto-erro);
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+#redefinirContainerErro {
+    background-color: var(--background-claro);
+
+    height: 22.3125rem;
+    width: 32.6875rem;
+    border-radius: 15px;
+    padding: 2rem 2.25rem;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.12);
+}
+
+#redefinirContainerErro #redefinirConteudo {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.erroFatal h2 {
+    font-size: 2.25rem;
+    color: var(--texto-preto);
+}
+
+.erroFatal span {
+    color: var(--texto-erro);
+}
+
+.erroFatal p {
+    width: 85%;
+    color: var(--texto-transparente);
+}
+
+.erroFatal button {
+    width: 100%;
+    height: 4.1875rem;
+
+    border-radius: 35px;
+    border: none;
+    background-color: var(--roxo-primario);
+
+    color: var(--texto-branco);
+    font-size: 1rem;
+
+    margin-top: 1rem;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.erroFatal button:hover {
+    cursor: pointer;
+    background-color: var(--roxo-secundario);
+}
+
+#redefinirContainerCarregando p {
+    font-size: 1rem;
+}
+
+@media(max-width:412px){
+    main {
+        padding: 1rem;
+    }
+}

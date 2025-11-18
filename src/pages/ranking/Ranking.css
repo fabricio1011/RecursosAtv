@@ -1,0 +1,230 @@
+@import url("../../Main.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#telaRanking {
+    min-height: 100dvh;
+    width: 100dvw;
+    display: flex;
+
+    gap: 1.25rem;
+    padding-right: 1.2rem;
+
+    background-color: var(--background-cinza);
+}
+
+#telaRanking #containerRanking {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+    width: 100%;
+
+    padding-left: 23.50rem;
+
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 2rem;
+
+    overflow-y: auto;
+    overflow: visible;
+}
+
+#telaRanking #containerRanking #title {
+    font-size: 2rem;
+
+    width: 100%;
+
+    color: var(--texto-preto);
+}
+
+#telaRanking #containerRanking hr {
+    width: 100%;
+
+    color: var(--texto-input);
+}
+
+#telaRanking #containerRanking #usuarioContainer {
+    display: flex;
+    align-items: center;
+}
+
+#telaRanking #containerRanking #usuarioContainer img {
+    height: 4.0625rem;
+
+    padding-right: 0.5rem;
+
+    filter: opacity(0.9);
+}
+
+#telaRanking #containerRanking #usuarioContainer img.dark {
+    filter: invert(1);
+}
+
+#telaRanking #containerRanking #usuarioContainer #userContent h1 {
+    font-size: 1.25rem;
+    color: var(--texto-preto);
+}
+
+#telaRanking #containerRanking #usuarioContainer #userContent span {
+    font-size: 1rem;
+    color: var(--texto-preto);
+}
+
+#telaRanking #containerRanking #filtros {
+    display: flex;
+    gap: 2.6875rem;
+
+    overflow: visible;
+}
+
+#telaRanking #containerRanking #filtros .filtro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    overflow: visible;
+}
+
+#telaRanking #containerRanking #filtros .filtro label {
+    font-size: 1rem;
+    color: var(--texto-preto);
+}
+
+#telaRanking #containerRanking #filtros .filtro select {
+    font-size: 1rem;
+
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    
+    border-radius: 5px;
+
+    border: none;
+
+    background-color: var(--background-claro);
+
+    box-shadow: 2px 2px 4px 0px var(--shadowbox);
+
+    color: var(--texto-preto);
+}
+
+#telaRanking #containerRanking #tabelaRanking {
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 0px var(--shadowbox);
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--background-claro);
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaHeader th {
+    font-size: 1rem;
+    font-weight: 700;
+    height: 5.625rem;
+    color: var(--texto-preto);
+    border-bottom: 1px solid var(--shadowbox);
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaCensored {
+    height: 5.625rem;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaCensored:hover {
+    background-color: var(--background-cinza);
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaCensored td {
+    font-size: 1rem;
+    color: var(--texto-preto);
+    border-bottom: 1px solid var(--shadowbox);
+    text-align: center;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaCensored .tabelaMediaCensored {
+    filter: blur(6px);
+
+    /* PROPRIEDADE CHAVE PARA BLOQUEAR CÓPIA/SELEÇÃO */
+    user-select: none; 
+    
+    /* Para maior compatibilidade com navegadores */
+    -webkit-user-select: none; /* Safari e Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Edge e IE */
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaCensored .tabelaNomeCensored {
+    filter: blur(6px);
+
+    /* PROPRIEDADE CHAVE PARA BLOQUEAR CÓPIA/SELEÇÃO */
+    user-select: none; 
+    
+    /* Para maior compatibilidade com navegadores */
+    -webkit-user-select: none; /* Safari e Chrome */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Edge e IE */
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaCensored:last-child td {
+    border-bottom: 8px;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaUncensored {
+    background-color: var(--roxo-primario);
+    transition: all 0.2s ease-in-out;
+    height: 5.625rem;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaUncensored:hover {
+    background-color: var(--roxo-secundario);
+    transition: all 0.2s ease-in-out;
+    height: 5.625rem;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaUncensored td {
+    font-size: 1rem;
+    color: var(--texto-branco);
+    border-bottom: 1px solid var(--shadowbox);
+    text-align: center;
+}
+
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaUncensoredOutros {
+    height: 5.625rem;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaUncensoredOutros:hover {
+    background-color: var(--background-cinza);
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaUncensoredOutros td {
+    font-size: 1rem;
+    color: var(--texto-preto);
+    border-bottom: 1px solid var(--shadowbox);
+    text-align: center;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabelaLinhaUncensoredOutros:last-child td {
+    border-bottom: none;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody {
+    flex-grow: 1;
+    height: 100px;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabela-mensagem {
+    text-align: center;
+}
+
+#telaRanking #containerRanking #tabelaRanking #tabelaBody .tabela-mensagem td {
+    color: var(--texto-preto);
+}

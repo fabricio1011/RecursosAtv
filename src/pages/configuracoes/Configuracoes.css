@@ -1,0 +1,403 @@
+@import url("../../Main.css");
+
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: hidden;
+}
+
+.no-scroll-global,
+.no-scroll-global * {
+  overflow: hidden !important;
+}
+
+#telaConfiguracoes {
+    width: 100dvw;
+    min-height: 100dvh;
+    display: flex;
+
+    gap: 1.25rem;
+
+    background-color: var(--background-cinza);
+}
+
+#telaConfiguracoes #containerConfiguracoes {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    width: 100%;
+    height: 100%;
+
+    margin-left: 23.50rem;
+    padding-right: 2.5rem;
+
+    position: relative;
+
+    overflow-y: auto;
+    overflow: visible;
+}
+
+#telaConfiguracoes #containerConfiguracoes #containerTexto {
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#telaConfiguracoes #containerConfiguracoes #containerTexto #title {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    width: 98%;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    color: var(--texto-preto);
+}
+
+  /* width: 200px;              define uma largura fixa 
+  white-space: nowrap;       impede a quebra de linha 
+  overflow: hidden;          oculta o texto que ultrapassar 
+  text-overflow: ellipsis;   adiciona as reticências (…) 
+  display: block;           garante que funcione corretamente */
+
+#telaConfiguracoes #containerConfiguracoes #containerTexto #desc {
+    font-size: 1.25rem;
+    color: var(--texto-transparente);
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes {
+    width: 100%;
+
+    border-radius: 8px 8px 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+
+    gap: 2.5rem;
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes {
+    background-color: var(--background-claro);
+    box-shadow: 0px 0px 8px 1px var(--shadowbox);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes #informacaoAluno {
+    height: 5.6875rem;
+
+    display: flex;
+    align-items: center;
+    
+    font-size: 1.5rem;
+    color: var(--roxo-primario);
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes .grupoInput { 
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 1rem;
+
+    gap: 0.625rem;
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes .grupoInput label {
+    font-size: 1.25rem;
+    color: var(--texto-preto);
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes .grupoInput .inputContainer {
+    width: 100%;
+    height: 4.1875rem;
+    position: relative;
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes .grupoInput .inputContainer img {
+    height: 1.25rem;
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 0.7rem;
+
+    filter: opacity(0.5);
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes .grupoInput .inputContainer img.dark {
+    filter: invert(1);
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes .grupoInput .inputContainer input {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid var(--borda-input);
+
+    background-color: var(--background-input);
+
+    font-size: 1rem;
+    color: var(--texto-transparente);
+
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes .grupoInput .inputContainer input::placeholder {
+    color: var(--texto-input);
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerInformacoes .grupoInput .inputContainer input:focus {
+    border: 2px solid var(--roxo-primario);
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerAparencia {
+    background-color: var(--background-claro);
+    box-shadow: 0px 0px 8px 1px var(--shadowbox);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerAparencia #containerTema {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerAparencia #containerTema #containerTextoTema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6875rem;
+    height: 5.6875rem;
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerAparencia #containerTema #containerTextoTema h3 {
+    display: flex;
+    align-items: center;
+    
+    font-size: 1.5rem;
+    color: var(--roxo-primario);
+}
+
+#telaConfiguracoes #containerConfiguracoes #configuracoes #containerAparencia #containerTema #containerTextoTema span {
+    font-size: 1.125rem;
+    color: var(--texto-transparente);
+}
+
+.switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.switch-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 4.5rem; 
+    height: 2rem; 
+    background: var(--background-slider); 
+    display: block;
+    border-radius: 25px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.switch-slider {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.4rem;
+    width: 1.5rem; 
+    height: 1.5rem; 
+    background: #ffffff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.switch-checkbox:checked + .switch-label {
+    background: var(--roxo-primario);
+}
+
+.switch-checkbox:checked + .switch-label .switch-slider {
+    left: calc(100% - 0.4rem);
+    top: 50%;
+    transform: translateY(-50%) translateX(-100%);
+}
+
+#telaConfiguracoes #containerConfiguracoes #containerButton {
+    height: 3.125rem;
+    width: 14.9375rem;
+
+    right: 0;
+    bottom: 0;
+}
+
+#telaConfiguracoes #containerConfiguracoes #containerButton button {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 35px;
+    border: none;
+    background-color: var(--roxo-primario);
+
+    color: var(--texto-branco);
+    font-size: 1rem;
+
+    transition: all 0.2s ease-in-out;
+}
+
+#telaConfiguracoes #containerConfiguracoes #containerButton button:hover {
+    cursor: pointer;
+    background-color: var(--roxo-secundario);
+}
+
+#telaConfiguracoes #containerConfiguracoes #containerLogout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#telaConfiguracoes #containerConfiguracoes #containerLogout button {
+    height: 3.125rem;
+    width: 11.25rem;
+
+    border-radius: 10px;
+    border: 3px solid var(--borda-input);
+    background-color: transparent;
+
+    color: var(--texto-transparente);
+    font-size: 1rem;
+
+    transition: all 0.2s ease-in-out;
+}
+
+#telaConfiguracoes #containerConfiguracoes #containerLogout button:hover {
+    cursor: pointer;
+    background-color: var(--texto-erro);
+    color: var(--texto-branco);
+    border: none;
+}
+
+#modalContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translatey(-50%) translateX(-50%);
+
+    width: 34.875rem;
+    height: 16.0625rem;
+
+    padding: 1.5rem;
+
+    background-color: var(--background-claro);
+    border-radius: 15px;
+
+    z-index: 2;
+}
+
+#modalContainer #modalContent {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#modalContainer #modalContent h3 {
+    font-size: 2rem;
+    color: var(--texto-preto);
+}
+
+#modalContainer #modalContent p {
+    font-size: 1rem;
+    color: var(--texto-preto);
+}
+
+#modalContainer #modalContent p strong {
+    font-size: 1rem;
+    color: var(--texto-erro);
+}
+
+#modalContainer #modalContent #modalOptions {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+#modalContainer #modalContent #modalOptions #buttonCancelar {
+    position: relative;
+    background-color: transparent;
+    height: 1.5rem;
+    border: none;
+    font-size: 1rem;
+    color: var(--texto-preto);
+    transition: color 0.2s ease-in-out;
+}
+
+#modalContainer #modalContent #modalOptions #buttonCancelar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; /* ajusta a posição do sublinhado */
+    width: 0%;
+    height: 2px; /* espessura da linha */
+    background-color: var(--texto-preto);
+    transition: width 0.3s ease-in-out;
+}
+
+#modalContainer #modalContent #modalOptions #buttonCancelar:hover::after {
+    width: 100%;
+}
+
+#modalContainer #modalContent #modalOptions #buttonCancelar:hover {
+    cursor: pointer;
+}
+
+#modalContainer #modalContent #modalOptions #buttonConfirmar {
+    background-color: var(--texto-erro);
+    border: none;
+    font-size: 1rem;
+    color: var(--texto-branco);
+
+    height: 3.125rem;
+    width: 8.5rem;
+    border-radius: 25px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+#modalContainer #modalContent #modalOptions #buttonConfirmar:hover {
+    cursor: pointer;
+    background-color: var(--texto-erro-secundario);
+}
+
+#fundoEscuro {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    position: fixed;
+
+    z-index: 1;
+
+    transition: all 0.2 ease-in-out;
+}
